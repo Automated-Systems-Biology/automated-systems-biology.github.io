@@ -1,0 +1,182 @@
+---
+import Base from '../layouts/Base.astro';
+import { instruments, instrumentGallery, researchImages, resourceDocs } from '../lib/site.js';
+
+const cats = instruments();
+const gallery = instrumentGallery();
+const research = researchImages();
+const nProtocols = resourceDocs().docs.length;
+
+const publications = [
+  {
+    title: 'An Automated Interaction Analysis Workflow: insights into the complex social behavior in mixed yeast colony biofilms',
+    authors: 'T. Gaizer, B. T. Gaizer, B. Pillér, V. Madár, J. Juhász, A. Csikász-Nagy, C. I. Pongor',
+    venue: 'Pázmány Péter Catholic University, Faculty of Information Technology and Bionics',
+  },
+  {
+    title: 'Chronic elevation of endocannabinoids induces rewiring of the spinal nociceptive circuitry — the 3D Analysis of Co-Expression (3D-ACE) open-source tool',
+    authors: 'S. G. Woodhams, C. I. Pongor, B. Barti, B. Dudok, M. Kano, K. Sakimura, M. Watanabe, I. Katona',
+    venue: 'Lendület Laboratory of Molecular Neurobiology, Institute of Experimental Medicine',
+  },
+];
+
+const experience = [
+  { yr: '2019 – present', role: 'Researcher', org: 'PPKE, Faculty of Information Technology and Bionics — robotics-driven laboratory automation, microscopy & high-throughput methods' },
+  { yr: '2015 – 2019', role: 'Research Associate', org: 'Nikon Center of Excellence, Institute of Experimental Medicine (HUN-REN) — confocal & STORM super-resolution imaging, image analysis' },
+  { yr: '2010 – 2015', role: 'Research Associate', org: 'Semmelweis University, Dept. of Biophysics — optical-trap nanometry & AFM of biomolecules' },
+];
+
+const courses = [
+  { n: 'Course 01', title: 'Bioanalytics and Molecular Diagnostics', desc: 'Principles and practice of bioanalytical measurement and modern molecular diagnostic methods.' },
+  { n: 'Course 02', title: 'Biophotonics and Laboratory Automation', desc: 'Light–matter interaction for imaging and sensing, paired with robotics and automated laboratory workflows.' },
+];
+
+const skills = ['Liquid-handling robotics', 'Confocal & STORM microscopy', 'High-content imaging', 'ImageJ', 'Python', 'MATLAB / Octave', 'Quantitative image analysis', 'Systems biology'];
+---
+<Base title="Automated Systems Biology — PPKE">
+  <header class="hero" id="home">
+    <div class="wrap">
+      <img class="logo" src="/assets/img/logo.svg" alt="Automated Systems Biology logo" />
+      <h1><span class="accent-text">Automated Systems Biology</span></h1>
+      <p class="sub">Robotics, high-throughput microscopy and quantitative biology — building the automated laboratory of the future.</p>
+      <p class="affil">Pázmány Péter Catholic University · Faculty of Information Technology and Bionics</p>
+      <div class="pills">
+        <span class="pill">Laboratory automation</span>
+        <span class="pill">High-content imaging</span>
+        <span class="pill">Quantitative microscopy</span>
+        <span class="pill">Systems biology</span>
+      </div>
+      <div class="btn-row">
+        <a class="btn primary" href="#research">Explore research →</a>
+        <a class="btn ghost" href="/resources">Lab resources</a>
+      </div>
+      <div style="margin-top:28px"><span class="badge-astro">⚡ Built with Astro</span></div>
+    </div>
+  </header>
+
+  <section id="research">
+    <div class="wrap">
+      <p class="eyebrow">Research</p>
+      <h2 class="sec-title">Engineering biology with automation</h2>
+      <div class="grid-2">
+        <div>
+          <p class="lead">We develop automated, robotics-driven workflows for cell biology — combining liquid-handling
+          robots, high-content optical microscopy and computational analysis to study living systems at scale and with
+          high reproducibility.</p>
+          <p class="muted">Recent work includes an <strong>automated interaction-analysis workflow</strong> that quantifies
+          competition in mixed yeast colony biofilms from time-lapse imaging, and open-source tools for
+          <strong>3D co-expression analysis</strong> in fluorescence microscopy. The lab is led by
+          <strong>Dr. Csaba I. Pongor</strong> (ORCID 0000-0002-6820-1285), bridging physical chemistry,
+          super-resolution imaging and laboratory automation.</p>
+          <div class="stat-row">
+            <div class="stat"><div class="n accent-text">6</div><div class="l">Automated platforms</div></div>
+            <div class="stat"><div class="n accent-text">2</div><div class="l">Open-source tools</div></div>
+            <div class="stat"><div class="n accent-text">{nProtocols}</div><div class="l">Open protocols</div></div>
+          </div>
+          <div class="tag-row">{skills.map((s) => <span class="tag">{s}</span>)}</div>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Selected publications</h3>
+          <ol class="pub-list">
+            {publications.map((p) => (
+              <li><strong>{p.title}</strong><br />{p.authors}<br /><span class="venue">{p.venue}</span></li>
+            ))}
+          </ol>
+        </div>
+      </div>
+      <h3 style="margin-top:48px">Gallery</h3>
+      <div class="gallery research">
+        {research.map((im) => (
+          <figure data-zoom><img src={im.src} alt={im.label} loading="lazy" /><figcaption>{im.label}</figcaption></figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="teaching" class="alt">
+    <div class="wrap">
+      <p class="eyebrow">Teaching</p>
+      <h2 class="sec-title">Education at PPKE-ITK</h2>
+      <p class="lead">Alongside research, the laboratory contributes to graduate teaching at the Faculty of Information
+      Technology and Bionics, with courses at the interface of measurement science, photonics and automation.</p>
+      <div class="course-grid">
+        {courses.map((c) => (
+          <article class="course-card">
+            <div class="num">{c.n}</div>
+            <h4>{c.title}</h4>
+            <p>{c.desc}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="instrumentation">
+    <div class="wrap">
+      <p class="eyebrow">Instrumentation</p>
+      <h2 class="sec-title">An automated, integrated platform</h2>
+      <p class="lead">From genomics-grade liquid handlers to fully motorized confocal microscopes, our instruments
+      interoperate in automated end-to-end workflows.</p>
+      {cats.map((cat) => (
+        <div class="inst-cat">
+          <h3><span class="chip">{cat.name}</span></h3>
+          <div class="inst-grid">
+            {cat.cards.map((c) => (
+              <article class="inst-card">
+                {c.img
+                  ? <div class="thumb" data-zoom><img src={c.img} alt={c.model} loading="lazy" /></div>
+                  : <div class="thumb" style="display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#fff;font-weight:800;font-size:1.6rem;letter-spacing:.05em">{c.model.split(/[^A-Za-z0-9]+/).filter(Boolean).slice(0,2).map((w)=>w[0]).join('').toUpperCase()}</div>}
+                <div class="body"><h4 class="model">{c.model}</h4><p class="desc">{c.desc}</p></div>
+              </article>
+            ))}
+          </div>
+        </div>
+      ))}
+      <h3 style="margin-top:54px">Instruments in the lab</h3>
+      <div class="gallery">
+        {gallery.map((g) => (
+          <figure data-zoom><img src={g.src} alt={g.label} loading="lazy" /><figcaption>{g.label}</figcaption></figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="alt">
+    <div class="wrap">
+      <p class="eyebrow">Contacts</p>
+      <h2 class="sec-title">Get in touch</h2>
+      <div class="contact-grid">
+        <div class="card">
+          <ul class="contact-list">
+            <li><div><div class="k">Laboratory</div><div class="v">Automated Systems Biology</div></div></li>
+            <li><div><div class="k">Institution</div><div class="v">Pázmány Péter Catholic University —<br />Faculty of Information Technology and Bionics</div></div></li>
+            <li><div><div class="k">Address</div><div class="v">Majer István u. 1–4, Esztergom, Hungary</div></div></li>
+            <li><div><div class="k">Email</div><div class="v"><a href="mailto:csaba.pongor@gmail.com">csaba.pongor@gmail.com</a></div></div></li>
+            <li><div><div class="k">Phone</div><div class="v"><a href="tel:"></a></div></div></li>
+            <li><div><div class="k">ORCID</div><div class="v"><a href="https://orcid.org/0000-0002-6820-1285" target="_blank" rel="noopener">0000-0002-6820-1285</a></div></div></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">People</h3>
+          <div class="person">
+            <div class="av">CP</div>
+            <div><div class="v">Dr. Csaba I. Pongor</div><div class="muted">Principal Investigator · Systems Biology, Lab Automation &amp; Bioimaging</div></div>
+          </div>
+          <h3 style="margin:22px 0 0">Track record</h3>
+          <ul class="timeline">
+            {experience.map((e) => (
+              <li><div class="yr">{e.yr}</div><div class="role">{e.role}</div><div class="org">{e.org}</div></li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>© 2026 Automated Systems Biology Laboratory · PPKE-ITK</span>
+      <span><a href="/resources">Resources</a> · <a href="#home">Back to top ↑</a></span>
+    </div>
+  </footer>
+</Base>
