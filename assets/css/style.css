@@ -70,7 +70,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; let
 .nav .wrap { display: flex; align-items: center; justify-content: center; height: 64px; position: relative; }
 .links { display: flex; align-items: center; gap: 4px; }
 .links a {
-  color: var(--soft); padding: 11px 17px; border-radius: 8px; font-size: 1.08rem; font-weight: 500;
+  color: var(--soft); padding: 11px 18px; border-radius: 8px; font-size: 1.18rem; font-weight: 700;
   transition: color .2s, background .2s;
 }
 .links a:hover, .links a.active { color: var(--text); background: var(--surface-2); text-decoration: none; }
