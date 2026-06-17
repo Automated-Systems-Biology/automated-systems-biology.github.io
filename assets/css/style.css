@@ -105,7 +105,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; let
 .band-b { background: var(--band-b); }
 .sec-head { max-width: 768px; margin: 0 auto 46px; text-align: center; }
 .eyebrow { text-transform: uppercase; letter-spacing: .26em; font-size: .76rem; font-weight: 700; color: var(--accent); margin: 0 0 14px; font-family: var(--sans); }
-.sec-title { font-size: clamp(2rem, 4vw, 3.1rem); margin: 0 0 20px; }
+.sec-title { font-size: clamp(2.5rem, 5.2vw, 4.2rem); margin: 0 0 20px; letter-spacing: -.02em; }
 .lead { color: var(--soft); font-size: 1.12rem; line-height: 1.8; }
 .rule { width: 64px; height: 1px; background: var(--border); margin: 0 auto 28px; }
 
@@ -149,6 +149,8 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; let
 
 /* ===== Teaching ===== */
 .course-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 900px; margin: 40px auto 0; }
+.course-grid-3 { grid-template-columns: repeat(3, 1fr); max-width: 1040px; }
+@media (max-width: 880px) { .course-grid-3 { grid-template-columns: 1fr; } }
 .course-card { position: relative; overflow: hidden; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px; box-shadow: var(--shadow); transition: transform .25s, border-color .25s; }
 .course-card:hover { transform: translateY(-4px); border-color: color-mix(in srgb, var(--accent) 45%, var(--border)); }
 .course-card .num { font-family: var(--mono); font-size: .76rem; color: var(--accent); font-weight: 700; letter-spacing: .12em; }
