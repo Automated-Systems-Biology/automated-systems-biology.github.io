@@ -258,7 +258,8 @@ a.course-link:hover { text-decoration: none; }
 .res-nav li > a:hover { background: var(--surface-2); color: var(--text); text-decoration: none; }
 .res-nav .lvl-0 > a { font-weight: 700; color: var(--text); margin-top: 6px; }
 .res-nav .lvl-1 { padding-left: 12px; border-left: 1px solid var(--border); margin-left: 6px; }
-.res-nav .lvl-2 { padding-left: 12px; border-left: 1px solid var(--border); margin-left: 6px; }
+.res-nav .lvl-2 { padding-left: 12px; border-left: 1px solid var(--border); margin-left: 18px; }
+.res-nav .lvl-3 { padding-left: 12px; border-left: 1px solid var(--border); margin-left: 30px; }
 .res-content { min-width: 0; }
 .res-content .doc { scroll-margin-top: 86px; margin-bottom: 14px; }
 .res-content .doc h2 { font-size: 1.7rem; margin: 40px 0 6px; padding-bottom: 8px; border-bottom: 2px solid var(--border); }
