@@ -7,7 +7,12 @@
     root.setAttribute("data-theme", t);
     localStorage.setItem("asb-theme", t);
     const b = document.getElementById("theme-toggle");
-    if (b) b.textContent = t === "dark" ? "☀" : "☾";
+    if (b) {
+      const dark = t === "dark";
+      b.setAttribute("aria-checked", dark ? "true" : "false");
+      const thumb = b.querySelector(".ts-thumb");
+      if (thumb) thumb.textContent = dark ? "☀" : "☾";
+    }
   }
   (function initTheme() {
     const s = localStorage.getItem("asb-theme");
