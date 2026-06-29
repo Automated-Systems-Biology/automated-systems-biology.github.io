@@ -55,7 +55,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; let
 .masthead { background: var(--band-a); padding: 32px 0 26px; text-align: center; }
 .mh-brand { display: inline-flex; align-items: center; gap: 28px; color: var(--accent); }
 .mh-brand:hover { text-decoration: none; }
-.mh-logo { width: 106px; height: 106px; color: var(--accent); flex: none; }
+.mh-logo { width: 58px; height: 112px; color: var(--accent); flex: none; }
 .mh-text { text-align: left; }
 .mh-title { display: block; font-family: var(--serif); font-weight: 600; font-size: clamp(2.5rem, 5.2vw, 3.9rem); line-height: 1.03; letter-spacing: -.02em; color: var(--accent); }
 .mh-sub { display: block; color: color-mix(in srgb, var(--accent), transparent 26%); font-size: 1.1rem; margin-top: 9px; }
