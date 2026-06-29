@@ -1,0 +1,23 @@
+laboratory_automation:
+  hamilton_starlet:
+    model: Hamilton Microstar Starlet
+    description: Hamilton Starlet is a liquid handling robot equipped with 4 automated pipettes, CoRe Grippers and iSwap robotic gripper. The system is fully equipped for aseptic work as it has a hepa filter for laminar flow and UV for sterilization. It is also equipped with heating, shaking and ultrasonic unit.
+  tecan_evo:
+    model: Tecan Freedom EVO 200
+    description: The Freedom EVO from TECAN is a liquid handling platform equipped with two 8 channel pipetting head and a robotic gripper. It is also equipped with heating, shaking and magnetic isolation units
+  opentrons_flex:
+    model: Opentrons FLEX
+    description: The OpenTrons Flex liquid handling work is a full genomics workstation. Equipped with several single and 8 channel pipetting heads, automated PCR instrument, heating and magnetic isolation units.
+
+spectrophotometry:
+  tecan_spark:
+    model: Tecan Spark
+    description: This is a multimode platereader for multimode platereader. This spectrophotometer can be used for UV/VIS (200–1,000 nm) and Fluorescent mode using its integrated monochromator (230–900 nm). It is also equipped with a humidity cassette and a cooling unit (18°C to 42°C). The system can be integrated with liquid handling robots for fully automated workflows.
+
+microscopy:
+  ti2_u:
+    model: Nikon Eclipse Ti2-U
+    description: Standard widefield fluorescent microscope with a motorized stage, a DIC system and a full array of plan apo objectives (4x, 20x, 60X).
+  ti2_e:
+    model: Nikon Eclipse Ti2-E
+    description: Fully motorized fluorescent microscope for widefield and confocal imaging. It is motorized in XY and Z and is fitted with a motorized filtercube and objective turret. The microscope is equipped with a spinning disc confocal camera from Crest Optics with a Photometrics Prime camera. As the microscope has a large field of view (25mm) and thus is also equipped with a high sensitivity Photometrics Kinetix camera. The system is automated thanks to the Nikon NIS Elements Jobs module which enables smart imaging. The system is also equipped with a full plan apo objective series (2x, 4x, 20x and 60x). This system is also surrounded by an OkoLab incubator for live cell imaging.
