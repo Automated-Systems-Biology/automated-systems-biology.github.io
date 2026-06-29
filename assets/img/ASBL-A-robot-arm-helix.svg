@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -11 66 130" width="132" height="260" style="color:#111111" role="img" aria-label="ASBL — Robot-Arm Helix logo mark">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -11 66 130" width="132" height="260" style="color:var(--accent, #0d8a86)" role="img" aria-label="ASBL — Robot-Arm Helix logo mark">
   
   <rect x="22" y="8" width="15" height="2" fill="currentColor"></rect>
   <rect x="12" y="22" width="37" height="2" fill="currentColor"></rect>
