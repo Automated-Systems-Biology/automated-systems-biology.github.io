@@ -170,6 +170,8 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; let
   font-family: var(--mono); font-size: .82rem; color: var(--accent); font-weight: 700;
 }
 .pub-list .t { font-weight: 600; }
+.pub-list .t a { color: inherit; }
+.pub-list .t a:hover { color: var(--accent); text-decoration: underline; }
 .pub-list .a { color: var(--soft); font-size: .92rem; }
 .pub-list .v { color: var(--dim); font-style: italic; font-size: .9rem; }
 
