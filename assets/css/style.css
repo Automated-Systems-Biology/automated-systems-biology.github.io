@@ -227,8 +227,7 @@ a.course-link:hover { text-decoration: none; }
 .contact-list li:last-child { border-bottom: 0; }
 .contact-list .k { color: var(--dim); font-size: .74rem; text-transform: uppercase; letter-spacing: .12em; }
 .contact-list .v { font-weight: 600; }
-.addr-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 8px; }
-.addr-grid .sub-k { color: var(--soft); font-size: .82rem; font-weight: 600; margin-bottom: 2px; }
+.addr-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
 .timeline { list-style: none; margin: 8px 0 0; padding: 0; }
 .timeline li { position: relative; padding: 0 0 20px 26px; border-left: 2px solid var(--border); }
 .timeline li:last-child { border-left-color: transparent; padding-bottom: 0; }
