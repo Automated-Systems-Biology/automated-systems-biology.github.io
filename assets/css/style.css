@@ -267,8 +267,7 @@ a.course-link:hover { text-decoration: none; }
 .res-content .doc.depth-2 h2, .res-content .doc.depth-3 h2 { font-size: 1.14rem; }
 .res-content .crumb { color: var(--dim); font-size: .74rem; text-transform: uppercase; letter-spacing: .1em; }
 .res-content .doc h3 { font-family: var(--sans); font-size: 1.02rem; margin: 22px 0 4px; color: var(--accent); }
-.res-content .doc h4 { font-family: var(--sans); font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; color: var(--text); margin: 20px 0 6px; }
-.res-content .doc h5 { font-family: var(--sans); font-size: .98rem; font-weight: 700; color: var(--soft); margin: 18px 0 4px; }
+.res-content .doc h4 { font-family: var(--sans); font-size: .98rem; font-weight: 700; color: var(--soft); margin: 18px 0 4px; }
 .res-content .doc .rlabel { font-weight: 700; color: var(--text); margin: 12px 0 2px; }
 .res-content .doc p { margin: 8px 0; color: var(--soft); }
 .res-content table { border-collapse: collapse; width: 100%; max-width: 600px; margin: 8px 0 16px; font-size: .9rem; }
