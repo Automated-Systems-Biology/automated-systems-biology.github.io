@@ -224,7 +224,7 @@ a.course-link:hover { text-decoration: none; }
 .contact-card.featured { border: 1.5px solid var(--accent); box-shadow: 0 22px 55px -26px rgba(13,138,134,.45); }
 .contact-card.featured::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; box-shadow: inset 0 0 0 1px rgba(13,138,134,.18); }
 .contact-card { position: relative; }
-.person .av.av-photo { background: none; overflow: hidden; }
+.person .av.av-photo { width: 98px; height: 130px; border-radius: 12px; flex: none; background: none; overflow: hidden; }
 .person .av img { width: 100%; height: 100%; object-fit: cover; display: block; }
 @media (max-width: 760px) { .contact-cards { grid-template-columns: 1fr; } }
 .contact-list.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 34px; }
