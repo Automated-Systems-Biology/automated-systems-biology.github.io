@@ -271,9 +271,9 @@ a.course-link:hover { text-decoration: none; }
 .res-content .crumb { color: var(--dim); font-size: .74rem; text-transform: uppercase; letter-spacing: .1em; }
 .res-content .doc h3 { font-family: var(--sans); font-size: 1.02rem; font-weight: 700; color: var(--soft); margin: 28px 0 10px; display: flex; align-items: center; gap: 10px; }
 .res-content .doc h3::before { content: ""; width: 18px; height: 2px; background: var(--text); flex: 0 0 auto; }
-.res-content .doc h4 { font-family: var(--serif); font-size: 1.08rem; font-weight: 700; color: var(--text); margin: 22px 0 6px 18px; }
+.res-content .doc h4 { font-family: var(--serif); font-size: 1.08rem; font-weight: 700; color: var(--text); margin: 24px 0 8px; display: inline-block; border-bottom: 2px solid var(--text); padding-bottom: 2px; scroll-margin-top: 86px; }
 .res-content .doc .rlabel { font-family: var(--sans); font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--soft); margin: 14px 0 4px 18px; }
-.res-content .doc p { margin: 8px 0; color: var(--soft); }
+.res-content .doc p { margin: 8px 0; color: var(--soft); text-align: justify; }
 .res-content table { border-collapse: collapse; width: 100%; max-width: 600px; margin: 8px 0 16px; font-size: .9rem; }
 .res-content table.ph { max-width: 440px; }
 .res-content th, .res-content td { text-align: left; padding: 7px 12px; border-bottom: 1px solid var(--border); color: var(--soft); }
