@@ -267,7 +267,15 @@ a.course-link:hover { text-decoration: none; }
 .res-content .doc.depth-2 h2, .res-content .doc.depth-3 h2 { font-size: 1.14rem; }
 .res-content .crumb { color: var(--dim); font-size: .74rem; text-transform: uppercase; letter-spacing: .1em; }
 .res-content .doc h3 { font-family: var(--sans); font-size: 1.02rem; margin: 22px 0 4px; color: var(--accent); }
+.res-content .doc h4 { font-family: var(--sans); font-size: .98rem; font-weight: 700; color: var(--soft); margin: 18px 0 4px; }
+.res-content .doc .rlabel { font-weight: 700; color: var(--text); margin: 12px 0 2px; }
 .res-content .doc p { margin: 8px 0; color: var(--soft); }
+.res-content table { border-collapse: collapse; width: 100%; max-width: 600px; margin: 8px 0 16px; font-size: .9rem; }
+.res-content table.ph { max-width: 440px; }
+.res-content th, .res-content td { text-align: left; padding: 7px 12px; border-bottom: 1px solid var(--border); color: var(--soft); }
+.res-content thead th { color: var(--text); font-weight: 700; border-bottom: 2px solid var(--border); }
+.res-content td.num, .res-content th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.res-content tbody tr:hover { background: var(--surface-2); }
 .res-content .doc ul, .res-content .doc ol { color: var(--soft); }
 .res-content .doc img { border: 1px solid var(--border); border-radius: 10px; margin: 14px 0; max-width: 520px; cursor: zoom-in; }
 .res-content .doc.stub { color: var(--dim); font-style: italic; }
